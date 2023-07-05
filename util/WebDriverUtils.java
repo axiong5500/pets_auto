@@ -26,12 +26,12 @@ public class WebDriverUtils {
     private static final long SLEEP_TIME = 1000;
     /******************短信服务************************/
     //抢到场地后接收短信的手机号码
-    private static String sms_phone_ = "13670275500";
+    private static String sms_phone_ = "";
     //短信内容变量需包含哪些内容信息
     private static String local_area_ = "PETS";
-    private static String smsSignId = "2b71384e374344b9bea048b3cf1965d4";
-    private static String templateId = "b92c52c88fe24ea49ab8debb81e38c29";
-    private static String appcode = "8a66aaf1e36b46a5aacadef33d5a4b0a";
+    private static String smsSignId = "";
+    private static String templateId = "";
+    private static String appcode = "";
 
     public static String getText(String logs, WebDriver webDriver, String url){
         return findElement(logs,webDriver,url).getText();
@@ -84,9 +84,9 @@ public class WebDriverUtils {
         }
     }
 
-    private static final String APP_ID = "14606563";
-    private static final String API_KEY = "4si54SFrpHursuCgyFw1qc2D";
-    private static final String SECRET_KEY = "0fuLyYuQXFvgCGvHIqTfuOZszlRzf7yB";
+    private static final String APP_ID = "";
+    private static final String API_KEY = "";
+    private static final String SECRET_KEY = "";
 
     public static AipOcr getAipClient() {
         return getAipClient(API_KEY, SECRET_KEY);
